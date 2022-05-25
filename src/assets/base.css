@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --color-background: #1c469a;
+    --color-primary: #000000;
+    --color-accent: #eee;
+    --row-gap: 2rem;
+
+    --anim-settings: 0.5s ease forwards;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+}
+
+body {
+    color: var(--color-primary);
+    background: var(--color-background);
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+#app {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.5em;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.form-input label {
+    font-size: 0.8rem;
+    margin-bottom: 0.25em;
+}
+
+.form-input-radio {
+    width: max-content;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form-input input:not(.form-input-radio),
+.form-input select {
+    padding: 1em;
+    border-radius: 0.2em;
+    border: 0.5px solid var(--color-accent);
+    background-color: var(--color-accent);
+}
+
+.form-input:focus {
+    outline: 2px dashed var(--color-primary);
+}
+
+.form-actions {
+    margin-top: 3em;
+    display: flex;
+    gap: 1em;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+}
+
+.slideInLeft {
+    animation: slideInLeft var(--anim-settings);
+}
+.slideInRight {
+    animation: slideInRight var(--anim-settings);
+}
+.slideOutLeft {
+    animation: slideOutLeft var(--anim-settings);
+}
+.slideOutRight {
+    animation: slideOutRight var(--anim-settings);
+}
