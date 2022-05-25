@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import { CG_Card, CG_Button } from '@/components/lib';
     import { usePageStore } from '@/stores/pageStore';
+    import { useFormStore } from '@/stores/formStore';
 </script>
 
 <template>
@@ -13,7 +14,12 @@
             <CG_Button
                 type="button"
                 :btn-type="'primary'"
-                @click="usePageStore().NEXT_PAGE()"
+                @click="
+                    () => {
+                        useFormStore().$reset();
+                        usePageStore().NEXT_PAGE();
+                    }
+                "
             >
                 Start
             </CG_Button>
