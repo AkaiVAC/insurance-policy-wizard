@@ -8,6 +8,9 @@ The primary objectives of this application is to achieve the following:
 
 The current solution tries to achieve the above goals in the best possible way within the available timeframe.
 
+The live version of this app can be found at —
+https://insurance-policy-wizard.netlify.app/
+
 ## Installation
 
 To install this app locally, extract the project files to a directory of your choice and run the following commands to install all dependencies and start the app:
