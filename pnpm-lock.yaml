@@ -27,7 +27,7 @@ devDependencies:
     version: 17.0.35
   '@vitejs/plugin-vue':
     specifier: ^2.3.3
-    version: 2.3.3(vite@2.9.9)(vue@3.2.36)
+    version: 2.3.3(vite@2.9.16)(vue@3.2.36)
   '@vue/eslint-config-prettier':
     specifier: ^7.0.0
     version: 7.0.0(eslint@8.16.0)(prettier@2.6.2)
@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^4.6.4
     version: 4.6.4
   vite:
-    specifier: ^2.9.9
-    version: 2.9.9
+    specifier: ^2.9.16
+    version: 2.9.16
   vitest:
     specifier: ^0.12.9
     version: 0.12.9(jsdom@19.0.0)
@@ -319,14 +319,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue@2.3.3(vite@2.9.9)(vue@3.2.36):
+  /@vitejs/plugin-vue@2.3.3(vite@2.9.16)(vue@3.2.36):
     resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.9
+      vite: 2.9.16
       vue: 3.2.36
     dev: true
 
@@ -1905,8 +1905,8 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /vite@2.9.9:
-    resolution: {integrity: sha512-ffaam+NgHfbEmfw/Vuh6BHKKlI/XIAhxE5QSS7gFLIngxg171mg1P3a4LSRME0z2ZU1ScxoKzphkipcYwSD5Ew==}
+  /vite@2.9.16:
+    resolution: {integrity: sha512-X+6q8KPyeuBvTQV8AVSnKDvXoBMnTx8zxh54sOwmmuOdxkjMmEJXH2UEchA+vTMps1xw9vL64uwJOWryULg7nA==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -1956,7 +1956,7 @@ packages:
       local-pkg: 0.4.1
       tinypool: 0.1.3
       tinyspy: 0.3.2
-      vite: 2.9.9
+      vite: 2.9.16
     transitivePeerDependencies:
       - less
       - sass
